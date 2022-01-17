@@ -1,0 +1,68 @@
+.body{
+    padding: 0px;
+    margin: 0px;
+     background-image: url("image/home.jpg");
+
+}
+
+.fieldset{
+    margin-top: 70px;
+    width: 40%;
+    background-color: #318CE7;
+    box-shadow: 5px 5px 20px 1px 10px rgb(85, 85, 85);
+    border: 0px;
+    padding-left: 10px;
+    border-radius: 10px 10px 10px 10px;
+    color: black;
+    heigth: 430px;
+}
+
+.td{letter-spacing: 1px;
+     font-size: large;
+    font-family: Impact, "Arial Black", Arial, Verdana, sans-serif;
+}
+
+.h1{
+    font-family: andalus;
+    letter-spacing: 3px;
+    text-align: center;
+    color: black;
+}
+
+.hr{
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 100px;
+}
+
+.ul li{
+    margin-left: 20px;
+    color:white;
+    }
+
+#submit{
+    margin: 20px 35px;
+    color: #318CE7;
+    background-color: white;
+    width: 80%;
+    font-size: 17px;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 10px
+}
+
+#submit:hover{
+    color:white;
+    background-color: #318CE7;
+}
+
+.input{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid black;
+    color: black;
+    width: 100%;
+    margin-left: 10px;
+}

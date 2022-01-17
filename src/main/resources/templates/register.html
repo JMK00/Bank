@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/reg.css}">
+    <title>Créer nouveau compte</title>
+
+</head>
+<body>
+
+<center>
+
+    <fieldset>
+        <form th:action="@{/enregistrement}" method="post" th:object="${userDto}">
+            <h1>Inscription</h1>
+            <hr>
+            <table>
+                <tr>
+                    <td>Nom:</td>
+                    <td><input type="text" name="firstName" value="" th:field="*{firstName}" /> <br><br><td>
+                </tr>
+
+                <tr>
+                    <td>Prénom :</td>
+                    <td><input type="text" name="lastName" value="" th:field="*{lastName}" /><br><br></td>
+                </tr>
+
+                <tr>
+                    <td>Date de naissance :</td>
+                    <td><input type="text" name="dateNaissance" value="" th:field="*{dateNaissance}"/><br><br></td>
+                </tr>
+
+                <tr>
+                    <td>N° téléphone :</td>
+                    <td><input type="tel" name="tel" value="" th:field="*{tel}"/><br><br></td>
+                </tr>
+
+                <tr>
+                    <td>Nationalité :</td>
+                    <td><input type="text" name="nationalite" value="" th:field="*{nationalite}" /><br><br></td>
+                </tr>
+
+                <tr>
+                    <td>Email :</td>
+                    <td><input type="text" name="email" value="" th:field="*{email}"/><br><br></td>
+                </tr>
+
+                <tr>
+                   <td colspan="2"><input type="submit"  id="submit" name="submit" value="S'inscrire"/></td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+</center>
+</body>
+</html>
